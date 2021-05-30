@@ -22,11 +22,11 @@ class Authenticate {
 	}
 
 	_returnRandomErrorMessages() {
-		return this._errorMessages[Math.floor(Math.random() * errorMessages.length)];	
+		return this._errorMessages[Math.floor(Math.random() * this._errorMessages.length)];	
 	}
 
 	_returnRandomSuccessfulMessages() {
-		return this._successMessages[Math.floor(Math.random() * errorMessages.length)];
+		return this._successMessages[Math.floor(Math.random() * this._successMessages.length)];
 	}
 
 	// Start authentication
